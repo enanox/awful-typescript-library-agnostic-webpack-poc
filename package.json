@@ -10,8 +10,12 @@
     "start": "npm run build && npm run webserver",
     "lint": "echo Running linter && \"node_modules/.bin/tslint\" -c tslint.json -p tsconfig.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enanox/awful-typescript-library-agnostic-webpack-poc.git"
+  },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "css-loader": "^0.28.1",
     "file-loader": "^0.11.1",
