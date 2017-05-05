@@ -1,0 +1,27 @@
+{
+  "name": "awful-typescript-library-agnostic-webpack-poc",
+  "version": "0.1.0",
+  "description": "Library agnostic TypeScript with Webpack PoC",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && \"node_modules/.bin/webpack\" --config webpack.config.js",
+    "webserver": "echo Running on http://localhost:8081/. Press Ctrl+C to exit && \"node_modules/.bin/http-server\"  -s -p 8081",
+    "start": "npm run build && npm run webserver",
+    "lint": "echo Running linter && \"node_modules/.bin/tslint\" -c tslint.json -p tsconfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.28.1",
+    "file-loader": "^0.11.1",
+    "ts-loader": "^2.0.3",
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.0"
+  },
+  "dependencies": {
+    "http-server": "^0.10.0",
+    "moment": "^2.18.1"
+  }
+}
